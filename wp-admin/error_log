@@ -1,0 +1,24 @@
+[23-Apr-2021 04:33:04 UTC] PHP Warning:  mysqli_query(): Premature end of data (mysqlnd_wireprotocol.c:976) in /home/nhakh802/premierdental.vn/wp-includes/wp-db.php on line 2033
+[23-Apr-2021 04:33:04 UTC] PHP Warning:  mysqli_query(): EOF packet 1 bytes shorter than expected in /home/nhakh802/premierdental.vn/wp-includes/wp-db.php on line 2033
+[23-Apr-2021 04:33:04 UTC] PHP Warning:  mysqli_query(): Premature end of data (mysqlnd_wireprotocol.c:976) in /home/nhakh802/premierdental.vn/wp-includes/wp-db.php on line 2033
+[23-Apr-2021 04:33:04 UTC] PHP Warning:  mysqli_query(): EOF packet 1 bytes shorter than expected in /home/nhakh802/premierdental.vn/wp-includes/wp-db.php on line 2033
+[23-Apr-2021 04:33:05 UTC] PHP Warning:  mysqli_query(): Premature end of data (mysqlnd_wireprotocol.c:976) in /home/nhakh802/premierdental.vn/wp-includes/wp-db.php on line 2033
+[23-Apr-2021 04:33:05 UTC] PHP Warning:  mysqli_query(): EOF packet 1 bytes shorter than expected in /home/nhakh802/premierdental.vn/wp-includes/wp-db.php on line 2033
+[23-Apr-2021 04:33:10 UTC] PHP Warning:  mysqli_query(): Premature end of data (mysqlnd_wireprotocol.c:976) in /home/nhakh802/premierdental.vn/wp-includes/wp-db.php on line 2033
+[23-Apr-2021 04:33:10 UTC] PHP Warning:  mysqli_query(): EOF packet 1 bytes shorter than expected in /home/nhakh802/premierdental.vn/wp-includes/wp-db.php on line 2033
+[23-Apr-2021 04:33:10 UTC] PHP Warning:  mysqli_query(): Premature end of data (mysqlnd_wireprotocol.c:976) in /home/nhakh802/premierdental.vn/wp-includes/wp-db.php on line 2033
+[23-Apr-2021 04:33:10 UTC] PHP Warning:  mysqli_query(): EOF packet 1 bytes shorter than expected in /home/nhakh802/premierdental.vn/wp-includes/wp-db.php on line 2033
+[23-Apr-2021 04:33:11 UTC] PHP Warning:  mysqli_query(): Premature end of data (mysqlnd_wireprotocol.c:976) in /home/nhakh802/premierdental.vn/wp-includes/wp-db.php on line 2033
+[23-Apr-2021 04:33:11 UTC] PHP Warning:  mysqli_query(): EOF packet 1 bytes shorter than expected in /home/nhakh802/premierdental.vn/wp-includes/wp-db.php on line 2033
+[23-Apr-2021 04:33:12 UTC] PHP Warning:  mysqli_query(): Premature end of data (mysqlnd_wireprotocol.c:976) in /home/nhakh802/premierdental.vn/wp-includes/wp-db.php on line 2033
+[23-Apr-2021 04:33:12 UTC] PHP Warning:  mysqli_query(): EOF packet 1 bytes shorter than expected in /home/nhakh802/premierdental.vn/wp-includes/wp-db.php on line 2033
+[23-Apr-2021 04:33:12 UTC] PHP Warning:  mysqli_query(): Premature end of data (mysqlnd_wireprotocol.c:976) in /home/nhakh802/premierdental.vn/wp-includes/wp-db.php on line 2033
+[23-Apr-2021 04:33:12 UTC] PHP Warning:  mysqli_query(): EOF packet 1 bytes shorter than expected in /home/nhakh802/premierdental.vn/wp-includes/wp-db.php on line 2033
+[23-Apr-2021 04:33:13 UTC] PHP Warning:  mysqli_query(): Premature end of data (mysqlnd_wireprotocol.c:976) in /home/nhakh802/premierdental.vn/wp-includes/wp-db.php on line 2033
+[23-Apr-2021 04:33:13 UTC] PHP Warning:  mysqli_query(): EOF packet 1 bytes shorter than expected in /home/nhakh802/premierdental.vn/wp-includes/wp-db.php on line 2033
+[23-Apr-2021 04:33:40 UTC] PHP Warning:  mysqli_query(): Premature end of data (mysqlnd_wireprotocol.c:942) in /home/nhakh802/premierdental.vn/wp-includes/wp-db.php on line 2033
+[23-Apr-2021 04:33:40 UTC] PHP Warning:  mysqli_query(): EOF packet 1 bytes shorter than expected in /home/nhakh802/premierdental.vn/wp-includes/wp-db.php on line 2033
+[23-Apr-2021 04:33:40 UTC] WordPress database error Commands out of sync; you can't run this command now for query SELECT option_value FROM wp_options WHERE option_name = 'a8c_developer' LIMIT 1 made by require_once('wp-admin/admin.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), WP_Hook->do_action, WP_Hook->apply_filters, Automattic_Developer->init, get_option
+[23-Apr-2021 04:33:40 UTC] WordPress database error Commands out of sync; you can't run this command now for query SELECT option_value FROM wp_options WHERE option_name = 'acf_pro_license' LIMIT 1 made by require_once('wp-admin/admin.php'), require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('init'), WP_Hook->do_action, WP_Hook->apply_filters, acf_pro_updates->init, acf_pro_get_license_key, acf_pro_get_license, get_option
+[23-Apr-2021 04:33:40 UTC] WordPress database error Commands out of sync; you can't run this command now for query SELECT option_value FROM wp_options WHERE option_name = 'db_upgraded' LIMIT 1 made by require_once('wp-admin/admin.php'), get_option
+[23-Apr-2021 04:33:40 UTC] WordPress database error Commands out of sync; you can't run this command now for query SELECT * FROM wp_users WHERE user_login = 'admin' LIMIT 1 made by require_once('wp-admin/admin.php'), auth_redirect, wp_validate_auth_cookie, get_user_by, WP_User::get_data_by
