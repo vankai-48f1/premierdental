@@ -1663,17 +1663,38 @@ header .float-menu .primary-menu-right {
   margin-bottom: 1.5rem;
 }
 
-.home-page .notification .form-subcribe span:nth-of-type(1) {
+.home-page .notification .form-subcribe span {
   background-color: #ededed;
   border-radius: 25px;
+  display: inline-block;
+  margin-bottom: 10px;
 }
 
-.home-page .notification .form-subcribe p {
+.home-page .notification .form-subcribe .form-row {
   display: flex;
-  justify-items: center;
+  flex-wrap: wrap;
 }
 
-.home-page .notification .form-subcribe .input-email {
+.home-page .notification .form-subcribe .form-row .form-col {
+  display: inline-block;
+  margin: 0;
+  width: 80%;
+}
+
+.home-page .notification .form-subcribe .form-row .form-col-submit {
+  width: 20%;
+}
+
+.home-page .notification .form-subcribe .form-row .form-col-submit input {
+  /* margin-left: 0; */
+  height: fit-content;
+}
+
+.home-page .notification .form-subcribe span:nth-child(1) {
+  width: 100%;
+}
+
+.home-page .notification .form-subcribe input:not(input[type="submit"]) {
   border: none;
   width: 89%;
   background-color: #ededed;
@@ -1688,7 +1709,7 @@ header .float-menu .primary-menu-right {
   margin: 0 1.25rem;
 }
 
-.home-page .notification .form-subcribe .input-email:focus,
+.home-page .notification .form-subcribe input:focus,
 .home-page .form-subcribe .wpcf7-submit:focus {
   outline: none;
 }
@@ -2323,6 +2344,7 @@ footer .copyright p {
 
 .header-img {
   position: relative;
+  padding-top: 25px;
 }
 
 .header-img img {
@@ -2542,7 +2564,12 @@ footer .copyright p {
 .col-md-3 .consultation-icon {
   display: block;
   width: 100%;
-  height: 94px;
+  height: 84px;
+}
+
+.col-md-3 .consultation-icon .fa-phone {
+  font-size: 4.1rem;
+  line-height: inherit;
 }
 
 .col-md-3 .consultation-icon span {
@@ -3199,6 +3226,10 @@ div.wpcf7 span.ajax-loader {
   border: 1px solid transparent;
 }
 
+.contact-current .header-area h5 {
+  margin: 0;
+}
+
 
 @media (max-width: 767px) {
   .mobile-disappear {
@@ -3797,5 +3828,17 @@ div.wpcf7 span.ajax-loader {
 
   .location-map iframe {
     height: 300px;
+  }
+
+  .home-page .notification .form-subcribe .form-row {
+    flex-direction: column;
+  }
+  
+  .home-page .notification .form-subcribe .form-row .form-col {
+    width: 100%;
+  }
+  
+  .home-page .notification .form-subcribe .form-row .form-col-submit {
+    width: 100%;
   }
 }

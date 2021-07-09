@@ -159,6 +159,10 @@ h5,
 h6 {
   clear: both;
 }
+.pd-top-1 {
+  padding-top: 1rem;
+}
+
 
 .main-body {
   position: relative;
@@ -1238,7 +1242,7 @@ header .float-menu .primary-menu-right {
 
 .home-page .service {
   background-color: white;
-  padding-bottom: 4rem;
+  /* padding-bottom: 4rem; */
   position: relative;
 }
 
@@ -1388,6 +1392,8 @@ header .float-menu .primary-menu-right {
   /* height: 500px; */
   color: white;
   text-align: center;
+  position: relative;
+  z-index: 2;
 }
 
 .home-page .patients-testimonial .container {
@@ -1520,6 +1526,7 @@ header .float-menu .primary-menu-right {
 
 .home-page .update {
   padding-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 
 .home-page .update .first-title span {

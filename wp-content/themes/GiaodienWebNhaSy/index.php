@@ -120,10 +120,6 @@ get_header();
                             <h5>
                                 <a href="<?php echo esc_url($dentist_url['url']); ?>"><?php echo $dentist_name; ?></a>
                             </h5>
-                            <hr>
-                            <p>
-                                <?php echo $dentist_history; ?>
-                            </p>
                         </div>
                         <div class="link-employee">
                             <a href="<?php echo esc_url($dentist_url['url']); ?>" class="btn-readmore"><?php echo esc_html($dentist_url['title']); ?></a>
@@ -208,12 +204,32 @@ get_header();
                 </div>
             </div>
         </div>
-        <div class="view-all">
-            <?php $link_view_all_service = get_field('link_view_all_services');
+    </section>
 
-            if ($link_view_all_service) : ?>
-                <a href="<?php echo esc_url($link_view_all_service['url']) ?>" class=""><?php echo esc_html($link_view_all_service['title']) ?></a>
-            <?php endif; ?>
+    <section class="notification">
+        <div class="container">
+            <h5><?php echo get_field('notification_title_top') ?></h5>
+            <hr class="line-left">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3 class="black-title">
+                        <?php $notificationHeader = get_field('notification-header');
+                        if (!empty($notificationHeader))
+                            echo $notificationHeader;
+                        ?>
+                    </h3>
+                    <p>
+                        <?php $notificationDesc = get_field('notification-description');
+                        if (!empty($notificationDesc))
+                            echo $notificationDesc;
+                        ?>
+                    </p>
+                    <?php the_content(); ?>
+                </div>
+            </div>
+        </div>
+        <div class="right-img">
+            <img src="<?php bloginfo('template_directory'); ?>/images/home-notification-img-min.png" alt="">
         </div>
     </section>
 
@@ -286,10 +302,8 @@ get_header();
                         <a href="<?php the_permalink(); ?>">
                             <?php the_post_thumbnail('large'); ?>
                         </a>
+                        <p></p>
                         <div class="info">
-                            <p><span class="date"><?php echo get_the_date('F'); ?></span>
-                                <a href="#" class="author"><?php echo get_the_author(); ?></a>
-                            </p>
                             <div class="content">
                                 <h5>
                                     <a href="<?php the_permalink() ?>"><?php echo wp_trim_words(get_the_title(), 10); ?></a>
@@ -297,24 +311,6 @@ get_header();
                                 <p>
                                     <?php echo wp_trim_words(get_the_excerpt()); ?>
                                 </p>
-                                <div class="display-flex">
-                                    <p class="tags-row">
-                                        <small>
-                                            <?php $arrayCat = get_the_category();
-                                                foreach ($arrayCat as $cat) {
-
-                                                    echo '<a href="' . get_category_link($cat) . '" class="category-tag">';
-                                                    echo $cat->name;
-                                                    echo '</a>';
-                                                    if ($cat != end($arrayCat))
-                                                        echo ', ';
-                                                }
-                                                ?>
-                                        </small>
-                                    </p>
-
-                                    <p><small><a href="#" class="comment">2</a></small></p>
-                                </div>
                                 <span class="plus"><i class="fas fa-plus fa-2x"></i></span>
                             </div>
                         </div>
@@ -323,33 +319,6 @@ get_header();
                 wp_reset_postdata(); ?>
 
             </div>
-        </div>
-    </section>
-
-    <section class="notification">
-        <div class="container">
-            <h5><?php echo get_field('notification_title_top') ?></h5>
-            <hr class="line-left">
-            <div class="row">
-                <div class="col-md-6">
-                    <h3 class="black-title">
-                        <?php $notificationHeader = get_field('notification-header');
-                        if (!empty($notificationHeader))
-                            echo $notificationHeader;
-                        ?>
-                    </h3>
-                    <p>
-                        <?php $notificationDesc = get_field('notification-description');
-                        if (!empty($notificationDesc))
-                            echo $notificationDesc;
-                        ?>
-                    </p>
-                    <?php the_content(); ?>
-                </div>
-            </div>
-        </div>
-        <div class="right-img">
-            <img src="<?php bloginfo('template_directory'); ?>/images/home-notification-img-min.png" alt="">
         </div>
     </section>
 
